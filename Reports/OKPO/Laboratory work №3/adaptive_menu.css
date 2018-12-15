@@ -1,0 +1,220 @@
+
+
+
+
+body, html  {
+    background-image: url(images/oboi-kosmos-4k-galaktika.jpg); 
+    line-height:1.5;
+    font-family:sans-serif;
+    font-size: 16px;
+    color:#fff;
+    margin: 0px auto;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    display: inline;
+    padding: 0px;
+}
+
+
+
+/* Стили для адаптивного меню */
+  nav > ul> li >a {
+    padding:35px 30px;
+  }
+a {
+  text-decoration:none;
+  color:#fff;
+}
+
+#header {
+  background:rgba(0,0,0,0);
+  width:100%;
+  position:relative;
+}
+
+#header:after {
+  content:"";
+  clear:both;
+  display:block;
+}
+
+
+
+
+
+.logo  {
+  float:left;
+  padding:26px 0 26px;
+}
+
+.logo a {
+  font-size:28px;
+  display:block;
+  padding:0 0 0 20px;
+}
+
+nav {
+  float:right;
+
+}
+
+nav>ul {
+  float:left;
+  position:relative;
+}
+
+nav li {
+  list-style:none;
+  float:left;
+}
+
+
+
+nav li a {
+  float:left;
+  padding:20px 40px;
+    font-size: 0.75em;
+      text-transform:uppercase;
+}
+
+
+
+nav li ul { 
+  display:none;
+}
+
+
+
+nav li li {
+  float:none;
+}
+
+
+
+.mega-col{
+  width:25%;
+  float:left;
+}
+
+#menu-icon{
+  position:absolute;
+  right:0;
+  top:50%;
+  margin-top:-12px;
+  margin-right:30px;
+  display:none;
+}
+
+#menu-icon span {
+
+  border:2px solid #fff;
+  width:30px;
+  margin-bottom:5px;
+  display:block;
+  -webkit-transition:all .2s;
+  transition:all .1s;
+
+}
+@media only screen and (max-width: 1170px) {
+
+  nav > ul> li >a {
+    padding:35px 30px;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  nav {
+    display:block!important;
+  }
+
+}
+
+@media only screen and (max-width: 959px) {
+
+  nav {
+    display:none;
+    width:100%;
+    clear:both;
+    float:none;
+    max-height:400px;
+    overflow-y:scroll;
+  }
+
+  #menu-icon {
+    display:inline;
+    top:45px;
+    cursor:pointer;
+  }
+
+  #menu-icon.active .first {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    margin-top:10px;
+  }
+
+  #menu-icon.active .second {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    position:relative;
+    top:-9px;
+  }
+
+  #menu-icon.active .third {
+    display:none;
+  }
+
+  .search {
+    float:none;
+  }
+
+  .search input {
+    width:100%;
+  }
+
+  nav {
+    padding:10px;
+  }
+
+  nav ul {
+    float:none;
+  }
+
+  nav li {
+    float:none;
+  }
+
+  nav ul li a {
+    float:none;
+    padding:8px;
+    display:block;
+  }
+
+  #header nav ul ul {
+    display:block;
+    position:static;
+    background:none;
+    border:none;
+    padding:0;
+  }
+
+  #header nav a {
+    color:#fff;
+    padding:8px;
+  }
+
+  #header nav a: hover {
+    background:#fff;
+    color:#333;
+    border-radius:3px;
+  }
+
+  .mega-col {
+    width:100%;
+  }
+  nav {
+    background-color: rgba(0 0 0 0);
+  }
+}
