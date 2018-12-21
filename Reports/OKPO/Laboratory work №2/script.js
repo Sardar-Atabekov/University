@@ -2,6 +2,12 @@
 let header=document.querySelector('header');
 addTagAndAttributes(header, 'div','id','menu-icon','<span class="first"></span><span class="second"></span><span class="third"></span>');
 
+// Скрипт для меню
+$("#menu-icon").on("click", function() {
+    $("nav").slideToggle();
+    $(this).toggleClass("active");
+});
+
 // Создаем массив который храниться все загаловки задании
  let tasks= [
 '1. Даны 3 вещественные числа a, b, c. Определить, имеется ли среди них хотя бы одна пара равных между собой чисел.',
