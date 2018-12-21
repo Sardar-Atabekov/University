@@ -2,6 +2,12 @@
 let header=document.querySelector('header');
 addTagAndAttributes(header, 'div','id','menu-icon','<span class="first"></span><span class="second"></span><span class="third"></span>');
 
+// Скрипт для меню
+$("#menu-icon").on("click", function() {
+    $("nav").slideToggle();
+    $(this).toggleClass("active");
+});
+
 // Создаем массив который храниться все загаловки задании
  let tasks= [
 '1. Ввести значение угла в градусах. Вычислить . предварительно переведя угол в радианы. Составить блок-схему алгоритма решения и постановку задачи.',
