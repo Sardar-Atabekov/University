@@ -64,7 +64,7 @@ select.onchange = function () {
 
   addContentTags(containerGlav,'h2',"Блок-схема");
   addTagAndAttributes (containerGlav,'iframe','src',
-    'https://drive.google.com/file/d/1UogkRWLrC-u9roxixQOw_BXtd1M0DfKs/preview', 'class','files')
+    'https://drive.google.com/file/d/1nGSiEEVI18v28UzJ1wcitSTKeGLHys_i/preview', 'class','files')
 
     let test=document.querySelector(".test");
   test.innerHTML='';
@@ -73,7 +73,7 @@ select.onchange = function () {
 
   addContentTags(test,'h2',"Тестовые варианты");
   addTagAndAttributes (test,'iframe','src',
-    'https://drive.google.com/file/d/10iOrbqYUrYflQec-erLA3UvtTQs_ztrS/preview', 'class','files')
+    'https://drive.google.com/file/d/1QyfIYgZCDeuFHrA05AzEvNBXByeXsIWO/preview', 'class','files')
 
   addContentTags(container,'h2','Программа');
 
