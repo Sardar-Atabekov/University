@@ -2,6 +2,13 @@
 let header=document.querySelector('header');
 addTagAndAttributes(header, 'div','id','menu-icon','<span class="first"></span><span class="second"></span><span class="third"></span>');
 
+
+// Скрипт для меню
+$("#menu-icon").on("click", function() {
+    $("nav").slideToggle();
+    $(this).toggleClass("active");
+});
+
 // Создаем массив который храниться все загаловки задании
  let tasks= [
 '6. Найти сумму чисел, кратных трем, в диапазоне от 0 до 50.'+
