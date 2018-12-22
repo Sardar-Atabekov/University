@@ -359,14 +359,18 @@ function task10 () {
 
 		}		
 	}*/
-
+	function isBigEnough(a, i, arr) {
+ 	 	if (i==arr.length-1) {
+			return true;
+		}
+		return a <arr[i];
+	}
 	if (arr) {
+		document.getElementById('result').innerHTML='';
 		for (let i=0; i<arr.length; i++){
-			if (arr[i].every((a, i, arr)=>{
-				if (i==arr.length-1) {
-					return true;
-				}
-			})) {}
+			if (arr[i].every(isBigEnough)) {
+				document.getElementById('result').innerHTML+='Возрастающий'
+			}
 		}
 	}
 }
@@ -426,8 +430,8 @@ function task15 () {
 			} 
 		}
 
-		result.innerHTML=q>0?'Элементы, у которых остаток от деления на m равен k '+elem.join(', '):
-		'Нету элементов, у которых остаток от деления на m равен k';
+		result.innerHTML=q>0?'Элементы, у которых остаток от деления на '+m+' равен '+ k +' -   ' +elem.join(', '):
+		'Нету элементов, у которых остаток от деления на '+m+' равен '+ k;
 		} else {
 			result.innerHTML="Правильно введите данные!";
 		}
@@ -435,7 +439,7 @@ function task15 () {
 }
 
 function task16 () {
-	let arr1=inpytArray();
+	let arr1=inputArray();
 	if (arr1) {
 		arr=arr1.flat();
 		let neus, udov, good, fine;
@@ -445,7 +449,7 @@ function task16 () {
 			udov=arr.filter(a=>a>60&&a<74).length;
 			good=arr.filter(a=> a>74&&a<86).length;
 			fine=arr.filter(a=> a>86&&a<=100).length;
-			result.innerHTML='Kоличестово не удовлетворительных оценок - '+neus+
+			result.innerHTML='Kоличестово неудовлетворенных оценок - '+neus+
 			'<br> Kоличестово удовлетворительных оценок - '
 			+udov+"<br> Kоличестово хороших оценок - "+good
 			+'<br> Kоличестово отличных оценок - '+fine;
@@ -484,7 +488,7 @@ function task18 () {
 			let newarr=col.filter(a=> a>0&&a<61).length;
 			let srd=(col.reduce((a,b)=>a+b))/col.length;
 			if (newarr>0) {
-				result.innerHTML='Общее количество неуспевающих студентов за экзамены ' + 
+				result.innerHTML='Общее количество неуспевающих студентов за экзамены -  ' + 
 				newarr+'<br> Средний балл группы '+srd;
 			} else {
 				result.innerHTML='Все студенты молодцы! '+'<br> Средний балл группы '+srd;
@@ -501,7 +505,3 @@ function task19 () {
 
 	}
 }
-
-
-
-
